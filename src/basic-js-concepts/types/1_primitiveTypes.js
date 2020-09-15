@@ -29,25 +29,10 @@ const s1 = Symbol(); //sdfkjsdfhksjfdkj
 console.log(s1, typeof s1);
 
 //The value pass by param is not associated with the value of the symbol, it's just a description
+//used as identifier for object properties
 const s2 = Symbol("Description"), //Symbol(description)
   s3 = Symbol("Description");
 console.log("s2:", s2, ", s3:", s3, "-> comparison s2 === s3:", s2 === s3); //false --> different values
-
-//used as identifier for object properties
-const name = Symbol("Property Name"),
-  person = {
-    [name]: "Maria",
-    age: 20,
-    city: "Tucumán",
-  };
-console.log("getOwnPropertyNames", Object.getOwnPropertyNames(person)); //we actually don't get name, cause name it's a Symbol
-console.log("getOwnPropertySymbols", Object.getOwnPropertySymbols(person));
-
-//two const with same Symbol value
-const value1 = Symbol.for("keyName"), // Symbol.for(key)
-  value2 = Symbol.for("keyName");
-console.log("value1:", value1, ", value2:", value2, "-> comparison value1 === value2:", value1 === value2); //true --> equal values
-console.log("Symbol.keyFor:", Symbol.keyFor(value2));
 
 /*------------- BigInt -------------*/
 const x = BigInt("2");
