@@ -1,4 +1,4 @@
-// closures
+// closures: functions can be returned from other functions
 function sum(operandoA) {
   console.log("operandoA", operandoA);
   return function (operandoB) {

@@ -1,4 +1,4 @@
-//functions passed as parametervolador
+//functions can be passed as parameters (arguments) to other functions
 const pokemons = [
   {
     name: "p1",
