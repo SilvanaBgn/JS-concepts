@@ -1,0 +1,24 @@
+button {
+  float: left;
+  width: 200px;
+  height: 50px;
+  margin-right: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:hover:disabled {
+  opacity: 1;
+}
+button:disabled {
+  background-color: grey;
+}
+#promisesButton:enabled {
+  background-color: green;
+}
+#promisesButtonStop:enabled {
+  background-color: red;
+}
