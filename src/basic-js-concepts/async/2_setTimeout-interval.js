@@ -11,7 +11,7 @@ let counter = 0,
     console.log("Oh Yeaaah! It has passed 1000 milliseconds, I'm the setInterval");
     counter++;
     if (counter === 5) {
-      clearInterval(intervalID); // Will clear the timer, or stop it
+      clearInterval(intervalID); // Will stop and clear the timer
     }
   }, 1000); // Will alert every second.
 
