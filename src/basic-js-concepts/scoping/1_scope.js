@@ -1,15 +1,18 @@
 /*--------------------------------------*/ console.log('------ VAR ------');
 // a var depends on the scope it's declared
-function printName(){
-  var name = 'Silvana';
-  console.log('- Inside the function, name is:',name);
+var nameOutside = 'Belen';
+
+function printNameInside(){
+  var nameInside = 'Silvana';
+  console.log('- Inside the function, nameInside is:', nameInside);
 }
-printName();
 
 try {
-  console.log(name);
+  console.log('- Outside the function, nameOutside is:', nameOutside);
+  printNameInside();
+  console.log(nameInside);
 } catch(err) {
-  console.log('- Outside the function, name is: Erroooor')
+  console.log('- Outside the function, nameInside is: Erroooor')
 }
 
 
@@ -24,6 +27,7 @@ if (true) { // this 'if' conditional block doesn't create a scope
     let likes = 'Coding'; //local scope
     const skills = 'JavaScript and PHP'; //local scope
 }
+console.log('Outside block statement:')
 console.log('- var address:', address); // logs 'Hammad'
 try {
   console.log(likes); // Uncaught ReferenceError: skills is not defined
