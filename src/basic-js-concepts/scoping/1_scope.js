@@ -1,9 +1,9 @@
 /*--------------------------------------*/ console.log('------ VAR ------');
 // a var depends on the scope it's declared
-var nameOutside = 'Belen';
+var nameOutside = 'Belen'; // global scope
 
 function printNameInside(){
-  var nameInside = 'Silvana';
+  var nameInside = 'Silvana'; //local scope
   console.log('- Inside the function, nameInside is:', nameInside);
 }
 

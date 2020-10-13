@@ -1,4 +1,5 @@
-// Hoisting is a JS mechanism where variables and function declarations are moved to the top of their scope before code executes. This is because of the way JS builds code.
+/* Hoisting is a JS mechanism where variables and function declarations are moved to 
+the top of their scope before code executes. This is because of the way JS builds code.*/
 
 /*--------------------------------------*/ console.log('------ HOISTING WITH var ------');
 x = 5+6; // Assign x
