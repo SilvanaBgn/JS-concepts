@@ -25,24 +25,12 @@ class User {
 }
 console.log('- EXAMPLE 2: (new User).logName() =', (new User).logName()); // User {}
 
-///////////////////////////////////////////////////////////
-/*
-// It's different when we use the new keyword
-function logFunction() {
-    console.log(this);
-}
-new logFunction(); // logFunction {}*/
 
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 /*--------------------------------------*/ console.log('------ this in a GLOBAL FUNCTION ------');
 function myGlobalFunction() {
-  return this;
+  return console.log('- this in myGlobalFunction() = ',this);
 }
-console.log('- this in myGlobalFunction() = ', myGlobalFunction());
-
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-/*--------------------------------------*/ console.log('------ this in an EVENT HANDLER ------');
+myGlobalFunction()
