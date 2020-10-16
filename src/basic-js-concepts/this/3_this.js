@@ -3,4 +3,4 @@
 function myStrictFunction() {
   return this;
 }
-console.log('- this in myStrictFunction() = ', myStrictFunction())
+console.log('- this in myStrictFunction() = ', myStrictFunction()); // logs undefined
