@@ -13,6 +13,8 @@ console.log('     >>>>> object created with Object.freeze() was not modified in 
 // CONCLUSION: use Object.freeze() to create a shallow immutable object. Updating/Deleting doesn't change the object.
 
 ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 /*--------------------------------------*/ console.log('------ Modifying 2nd level ------');
 //But what happens if we try to modify in second level?
 const person2 = Object.freeze({
@@ -27,6 +29,8 @@ console.log('     >>>>> but now, despite Object.freeze(), we updated and it suff
 
 //CONCLUSION: if you want immutability in every level, you need to make immutable each of them (with recursivity for example)
 
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 /*--------------------------------------*/ console.log('------ Using Recursive immutability ------');
 //Recursive immutability
