@@ -13,8 +13,9 @@ alert(nepal.mountains);
 nepal.printWithDash(); //--> falla por el this.mountains, ¿a dónde apunta?
 
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 let nepal = {
   //add property
   mountains: ['Everest', 'Fitz Roy', 'Fish Tail'],
@@ -26,17 +27,16 @@ let nepal = {
     },3000)
   }
 }
-
-//en 1) apunta al contexto interno, en 2) aputna al global
+//CONCLUSION:
+//en 1) apunta al contexto interno, en 2) aputna al global, por el asincronismo
 //las arrow functions en cambio, no tienen su propio contexto, entonces toman el contexto de donde están
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/*--------------------------------------*/ console.log('------ This in arrow functions ------');
 let nepal = {
-  //add property
   mountains: ['Everest', 'Fitz Roy', 'Fish Tail'],
-  // add method
   printWithDash: function(){
     setTimeout(() => {console.log(this.mountains.join(" - "))},3000)
   }
