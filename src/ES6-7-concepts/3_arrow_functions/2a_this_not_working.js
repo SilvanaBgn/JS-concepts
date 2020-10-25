@@ -3,15 +3,17 @@ console.log('   --- EXAMPLE 1 ---');
 const cat = {
   lives: 7,
   dies: () => {
-    this.lives--;
-    console.log('- cat.lives =', cat.lives)
     console.log('- inside arrow function, this =', this);
+    this.lives--;
   }
 }
 
 console.log('- We invoke cat.dies(); which should decrease it lives counter but it does not do it cause of arrow function');
 cat.dies(); //doesn't decrease lives!!!
-
+console.log('- cat.lives =', cat.lives)
+console.log('- outside, after all executions, this =', this);
+console.log('>>> this global object was updated !!!!');
+delete this.lives;
 
 /////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
