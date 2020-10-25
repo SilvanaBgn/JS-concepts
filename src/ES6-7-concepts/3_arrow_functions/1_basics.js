@@ -1,4 +1,7 @@
 /*--------------------------------------*/ console.log('------ ARROW FUNCTIONS BASICS ------');
+/* An arrow function expression is a compact alternative to a traditional function 
+expression, but is limited and can't be used in all situations.*/
+
 // 1: REGULAR FUNCTION
 // 2: ARROW FUNCTION
 
