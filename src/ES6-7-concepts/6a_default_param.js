@@ -1,4 +1,4 @@
-/*--------------------------------------*/ console.log('------ Default value (ES6) ------');
+/*--------------------------------------*/ console.log('------ Default param (ES6) ------');
 // applies the default value when it's undefined
 // it's only valid for undefined, not other falsy values. 
 function multiply(a, b = 1) {
