@@ -37,4 +37,3 @@ getBtnWithCORS.addEventListener('click', () => {
   // server api with cors allowed
   getData('https://cors-demo.glitch.me/allow-cors');
 });
-

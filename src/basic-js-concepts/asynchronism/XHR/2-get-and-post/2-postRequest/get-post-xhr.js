@@ -58,6 +58,3 @@ const sendData = () => { // POST method
 
 getBtn.addEventListener('click', getData);
 postBtn.addEventListener('click', sendData);
-
-
-
