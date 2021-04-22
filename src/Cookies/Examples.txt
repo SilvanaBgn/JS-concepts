@@ -1,0 +1,6 @@
+To test in the browser:
+Try creating cookie with domain specify as:
+
+and check cookies in:
+http://www.example.com/
+https://www.example.com/

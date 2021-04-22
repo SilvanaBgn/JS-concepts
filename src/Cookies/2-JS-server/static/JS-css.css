@@ -1,0 +1,31 @@
+body {
+  width: 500px;
+  font: 16px/18px Arial;
+}
+/* label {
+  display: block;
+  margin: 15px 0;
+}
+input {
+  width: 100%;
+  height: 25px;
+  padding-left: 7px;
+} */
+#buttonsSection {
+  margin: 10px 0 20px;
+}
+a {
+  width: 130px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: inherit;
+  background-color: lightgray;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* p {
+  border-top: 0.7px solid gray;
+  padding: 20px 0;
+} */
